@@ -411,6 +411,7 @@ h3 {
                      /* Mobile Version */
 
 
+
 @media (max-width: 768px)  {
     #header-img {
         margin-top: 20px;
@@ -500,4 +501,42 @@ h3 {
         height: 22px;
         animation: move 2s linear infinite;
     }
+    /* Additional CSS for the 'section.events' on mobile screens */
+.events {
+    padding: 20px; /* Add some padding to separate the content */
 }
+
+.events h1 {
+    font-size: 26px; /* Adjust the heading font size */
+    text-align: center; /* Center the heading text */
+    margin-bottom: 10px; /* Add some space below the heading */
+}
+
+.events p {
+    font-size: 14px; /* Adjust the paragraph font size */
+    text-align: center; /* Center the paragraph text */
+    margin-bottom: 20px; /* Add some space below the paragraph */
+}
+
+.events-col {
+    text-align: center; /* Center the image and text */
+}
+
+.events-col img {
+    max-width: 100%; /* Ensure the image scales properly */
+    height: auto;
+}
+
+.layer h4 {
+    font-size: 16px; /* Adjust the text within the layer */
+}
+
+@media (max-width: 768px) {
+    .events-col img {
+        min-width: 80%;
+    }
+}
+
+}
+
+
