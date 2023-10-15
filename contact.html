@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Contact</title>
+    
+    <link rel="icon" href="img/AIMLS.png">
+    <!-- All Fonts Here-->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;600;700&display=swap" rel="stylesheet">
+
+    <!-- All CSS Here-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/contact.css">
+</head>
+<body>
+    <section class="about-header">
+        <nav>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <!--
+                <ul>
+                    <li><a href="events.html">Events</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="members.html">Team</a></li>
+                    <li><a href="alumni.html">Alumni</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            -->
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="">Events</a></li>
+                <li><a href="">Projects</a></li>
+                <li><a href="">Team</a></li>
+                <li><a href="">Gallery</a></li>
+                <li><a href="">Contact</a></li>
+            </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1 id="header-name">Contact Us</h1>
+    </section>
+
+    <!-- Contact -->
+
+    <section class="location">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7002.383214848753!2d77.28294102504272!3d28.655408233582435!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cfc91a62df7255%3A0x4ee5ef86cf6be08e!2sM739%2BM6R%2C%20Krishna%20Nagar%20Road%20Chacha%20Nahru%20Bal%20Chikitsalaya%2C%20Geeta%20Colony%2C%20New%20Delhi%2C%20Delhi%20110031!5e0!3m2!1sen!2sin!4v1639053419686!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </section>
+
+    
+    
+
+    <section class="contact-us">
+        <div class="row">
+            <div class="contact-col">
+                <div>
+                    <i class="fa fa-home"></i>
+                    <span>
+                        <h5>AIMLS Club</h5>
+                        <p>NSUT East Campus</p>
+                    </span>
+                </div>
+                <div>
+                    <i class="fa fa-phone"></i>
+                    <span>
+                        <h5>+91 **********</h5>
+                        <p>Plz Call Us During office hours</p>
+                    </span>
+                </div>
+                <div>
+                    <i class="fa fa-envelope-o"></i>
+                    <span>
+                        <h5 id="mail-id">@gmail.com</h5>
+                        <p>You can mail us 24/7</p>
+                    </span>
+                </div>
+            </div>
+            <div class="contact-col">
+
+                <!-- Contact FORM -->
+
+                <form method="post" action="javascript:sendEmail()">
+
+                    <input type="text" id="Name" placeholder="Enter Your Name" required>
+                    <input type="email" id="Email" placeholder="Enter Your Email-id" required>
+                    <textarea rows="8" id="Message" placeholder="Your Message" required></textarea>
+                    <button type="submit" class="first-btn">Send Message</button>
+
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Code -->
+
+    <section class="footer">
+        <h3>About Us</h3>
+        <p>AIMLS is a dynamic student organization dedicated to the fields of Artificial Intelligence and Machine Learning. We provide an excellent platform for students interested in the domains of AI and ML. AIMLS is an interdisciplinary society open to all who want to explore AI, ML, and related areas. We offer numerous opportunities to learn about the latest advancements and applications in AI and ML throughout the year</p>
+
+        <div class="icons">
+            <a href=""><i class="fa fa-facebook"></i></a>
+            <a href=""><i class="fa fa-instagram"></i></a>
+            <a href=""><i class="fa fa-linkedin"></i></a>
+            <a href=""><i class="fa fa-github"></i></a>
+        </div><br>
+        <p>Made with <i class="fa fa-heart-o"></i> by Ahbar Husain <br> All Copyrights © Reserved </p>
+    </section>
+
+    <script src="js/onclick.js"></script>
+
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.js"></script>
+
+    <script src="js/form.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function() {
+            emailjs.init("RInIGbk50quH0LumJ");
+        })();
+    </script>
+</body>
+</html>
